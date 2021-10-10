@@ -1,0 +1,53 @@
+.loadPageLoading
+     width: 100vw
+     height: 100vh
+     border: 0px solid red
+     position: fixed
+     top: 0
+     left: 0
+     z-index: 9999
+     background: white
+     display: none
+     &.active
+          display: block 
+     .boxBall
+          margin: auto
+          text-align: center
+     .boxLoadTitle
+          h2
+               @include fontFree($blue, 14px,14px,14px,14px, $Poppins)
+               text-align: center
+               text-transform: uppercase
+          p
+               @include fontDescription($blue)
+               text-align: center
+     .ldio-dzc1st7xsju div 
+          position: absolute
+          width: 20px
+          height: 20px
+          border-radius: 50%
+          background: #007bc2
+          left: 15px
+          top: 0px
+          animation: ldio-dzc1st7xsju 0.5952380952380952s linear infinite
+          
+     .loadingio-spinner-ball-vtn3qrnaw9c 
+          width: 50px
+          height: 50px
+          display: inline-block
+          overflow: hidden
+          background: none
+          border: 0px solid red
+     
+     .ldio-dzc1st7xsju
+          width: 100%
+          height: 100%
+          position: relative
+          transform: translateZ(0) scale(1)
+          backface-visibility: hidden
+          transform-origin: 0 0
+          div
+               box-sizing: content-box
+     > div
+          width: 100%
+          height: 100%

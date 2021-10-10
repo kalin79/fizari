@@ -1,0 +1,146 @@
+footer
+     .boxCurva
+          top: -3rem
+          bottom: auto
+          left: 0
+          @media screen and (min-width: 992px)
+               top: -5rem
+          .st1
+               fill: $blackLight
+     .boxLegal
+          p,
+          a
+               @include fontFree(white, 12px,12px,12px,12px, $Poppins)
+               font-weight: 400
+               line-height: 1em
+               @media screen and (min-width: 992px)
+                    line-height: 1em
+               @media screen and (min-width: 1200px)
+                    line-height: 1em
+               @media screen and (min-width: 1400px)
+                    line-height: 1em
+          p
+               text-align: center
+               line-height: 1.5em
+               @media screen and (min-width: 992px)
+                    line-height: 1em
+               @media screen and (min-width: 1200px)
+                    line-height: 1em
+               @media screen and (min-width: 1400px)
+                    line-height: 1em
+          a
+               text-decoration: none
+               position: relative
+               &:before
+                    content: ''
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    width: 100%
+                    height: 1px
+                    background: white
+
+     .boxLineSeparate
+          width: 100%
+          height: 60px
+          border: 0px solid red
+          .line
+               width: 95%
+               height: 1px
+               background: rgba(white, .65)
+               @media screen and (min-width: 992px)
+                    width: 95%
+               @media screen and (min-width: 1200px)
+                    width: 90%
+               @media screen and (min-width: 1400px)
+                    width: 75%
+     .boxContent
+          padding: 1.5rem 0 2rem
+          @media screen and (min-width: 992px)
+               padding: 4rem 0 2rem
+
+     .footerHeader
+          h2
+               @include fontFree(white, 22px,20px,17px,18px, $Poppins)
+               font-weight: 600
+               line-height: 1em
+               @media screen and (min-width: 992px)
+                    line-height: 1em
+               @media screen and (min-width: 1200px)
+                    line-height: 1em
+               @media screen and (min-width: 1400px)
+                    line-height: 1em
+
+     .footerBody
+          &.sinline
+               a
+                    > div
+                         margin-bottom: 1rem
+                         @media screen and (min-width: 992px)
+                              margin-bottom: 0rem
+                    &:last-child
+                         margin-bottom: 0rem
+                    span
+                         line-height: 1em
+                         @media screen and (min-width: 992px)
+                              line-height: 1em
+                         @media screen and (min-width: 1200px)
+                              line-height: 1em
+                         @media screen and (min-width: 1400px)
+                              line-height: 1em
+                         &:before
+                              content: ''
+                              position: absolute
+                              bottom: 0
+                              left: 0
+                              width: 100%
+                              height: 0px
+                              background: white
+          &.boxSocial
+               margin-top: .25rem
+               @media screen and (min-width: 992px)
+                    margin-top: 0rem
+               a
+                    svg
+                         width: 25px
+                         height: 25px
+                         margin-right: .75rem
+          a
+               display: block
+               text-decoration: none
+               color: white
+               span
+                    @include fontFree(white, 16px,14px,12px,14px, $Poppins)
+                    font-weight: 500
+                    position: relative
+                    line-height: 1.5em
+                    @media screen and (min-width: 992px)
+                         line-height: 1.5em
+                    @media screen and (min-width: 1200px)
+                         line-height: 1.65em
+                    @media screen and (min-width: 1400px)
+                         line-height: 1.65em
+
+                    &:before
+                         content: ''
+                         position: absolute
+                         bottom: -1px
+                         left: 0
+                         width: 100%
+                         height: 1px
+                         background: white
+               svg
+                    margin-right: .35rem
+                    color: white
+     .boxContent
+          background-image: url('../images/fondoFooter.jpg')
+          background-position: center
+          background-repeat: no-repeat
+          background-size: cover
+          .boxLogo
+               border: 0px solid red
+               margin-bottom: 2rem
+               position: relative
+               z-index: 12
+               img
+                    width: 200px

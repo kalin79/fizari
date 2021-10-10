@@ -1,0 +1,55 @@
+.sectionMapa
+     .boxButton
+          margin-top: 2.5rem 
+          @media screen and (min-width: 992px)
+               margin-top: .5rem 
+     .boxMaps
+          width: 100%
+          height: 400px
+          @media screen and (min-width: 992px)
+               height: 500px
+          @media screen and (min-width: 1200px)
+               height: 600px
+          @media screen and (min-width: 1400px)
+               height: 650px
+     &:before
+          content: ''
+          background: rgba($grayLight, .85)
+          height: 100%
+          width: 100%
+          position: absolute
+          left: 0
+          top: 0
+          z-index: 2
+     .boxContentFloat
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          width: 100%
+          z-index: 10
+          @media screen and (min-width: 992px)
+               top: 50%
+          a
+               text-decoration: none
+               &:hover
+                    color: white
+          h3
+               @include fontFree($gray, 60px,50px,40px,30px, $Poppins)
+               font-weight: 600
+               line-height: 1em
+               @media screen and (min-width: 992px)
+                    line-height: 1em
+               @media screen and (min-width: 1200px)
+                    line-height: 1em
+               @media screen and (min-width: 1400px)
+                    line-height: 1em
+          p
+               @include fontFree($gray, 28px,20px,14px,14px, $Poppins)
+               font-weight: 500
+               line-height: 1.5em
+               @media screen and (min-width: 992px)
+                    line-height: 1.5em
+               @media screen and (min-width: 1200px)
+                    line-height: 1.5em
+               @media screen and (min-width: 1400px)
+                    line-height: 1.5em

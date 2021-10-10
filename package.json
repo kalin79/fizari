@@ -1,0 +1,18 @@
+{
+  "name": "fizari",
+  "version": "1.0.0",
+  "description": "Empresa dedicada a ofrecer servicios logisticos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlos Espinoza",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "gsap": "^3.8.0",
+    "jquery": "^3.6.0",
+    "jquery-validation": "^1.19.3",
+    "owl.carousel": "^2.3.4"
+  }
+}

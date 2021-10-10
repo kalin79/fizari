@@ -1,0 +1,79 @@
+.sectionBanner
+     width: 100%
+     height: 600px
+     position: relative
+     @media screen and (min-width: 992px)
+          height: 100vh
+     .owl-theme
+          .owl-dots
+               position: absolute
+               border: 0px solid green
+               width: 100%
+               bottom: 5rem
+               left: 0
+               z-index: 12
+               @media screen and (min-width: 768px)
+                    bottom: 7rem
+               @media screen and (min-width: 992px)
+                    bottom: 5rem
+               @media screen and (min-width: 1200px)
+                    bottom: 7rem
+               @media screen and (min-width: 1400px)
+                    bottom: 7.5rem
+               button
+                    span
+                         width: 10px
+                         height: 10px
+                         border-radius: 50%
+                         border: 0px solid white
+                         background: $gray
+                         margin: 5px 3px
+                    &.active
+                         span
+                              background: $orange
+     .boxContent,
+     .carruselHome,
+     .owl-carruselHome,
+     .owl-stage-outer,
+     .owl-stage,
+     .owl-item,
+     .item
+          height: 100%
+     .item
+          background-image: url('../images/b1.jpg')
+          background-position: center
+          background-repeat: no-repeat
+          background-size: cover
+          .container
+               height: 100%
+               > div
+                    height: 100%
+                    padding-top: 2.5rem
+                    @media screen and (min-width: 992px)
+                         padding-top: 0rem
+                    @media screen and (min-width: 1400px)
+                         padding-top: 0rem
+               .boxTitleBanner
+                    h2
+                         @include fontFree(white, 70px, 60px,40px,30px, $Poppins)
+                         font-weight: 600
+                         line-height: 1.10em
+                         @media screen and (min-width: 992px)
+                              line-height: 1em
+                         @media screen and (min-width: 1200px)
+                              line-height: 1em
+                         @media screen and (min-width: 1400px)
+                              line-height: 1em
+               .boxDescripcionBanner
+                    margin-top: 1rem
+                    p
+                         @include fontFree(white, 24px, 20px,18px,14px, $Poppins)
+                         font-weight: 500
+                         line-height: 1.5em
+                         @media screen and (min-width: 992px)
+                              line-height: 1.5em
+                         @media screen and (min-width: 1200px)
+                              line-height: 1.5em
+                         @media screen and (min-width: 1400px)
+                              line-height: 1.5em
+     

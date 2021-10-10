@@ -1,0 +1,32 @@
+.headerMain
+     position: absolute
+     width: 100%
+     border-bottom: 1px solid rgba(white,.45)
+     z-index: 300
+     .boxOptionMenu
+          display: none
+          @media screen and (min-width: 992px)
+               display: block
+     .boxMenuMovil
+          display: block
+          @media screen and (min-width: 992px)
+               display: none
+     .boxContent
+          padding: 1.5rem 0 0
+     .btn-buttom
+          margin-left: 0rem
+          @media screen and (min-width: 992px)
+               margin-left: .85rem
+          @media screen and (min-width: 1200px)
+               margin-left: 1rem
+
+     nav
+          padding-top: 1rem
+          a
+               @include fontMainMenu(white,white)
+     .boxImage
+          img
+               width: 200px
+               @media screen and (min-width: 992px)
+                    width: 200px
+               
