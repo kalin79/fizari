@@ -38,6 +38,50 @@ p
                stroke: white
           .stOrange
                stroke: $orange
+.boxCurva4
+     width: 100%
+     position: absolute
+     z-index: 3
+     border: 0px solid red
+     bottom: 0
+     left: 0
+     height: auto
+     overflow: hidden
+     @media screen and (min-width: 768px)
+          height: 60px
+     @media screen and (min-width: 992px)
+          height: 80px
+     @media screen and (min-width: 1200px)
+          height: 100px
+     @media screen and (min-width: 1400px)
+          height: 120px
+     .st1
+          fill: $orange
+     .st2
+          fill: white
+     .stFondo2
+          fill: rgba($whiteLight3,1)
+     
+.boxCurva3
+     width: 100%
+     position: absolute
+     z-index: 3
+     border: 0px solid red
+     top: 0
+     left: 0
+     height: auto
+     overflow: hidden
+     @media screen and (min-width: 992px)
+          height: 104px
+     @media screen and (min-width: 1200px)
+          height: 104px
+     @media screen and (min-width: 1400px)
+          height: 104px
+     .st1
+          fill: $orange
+     .stfondo
+          fill: $whiteLight3
+
 .boxCurva2
      width: 100%
      position: absolute
@@ -55,6 +99,8 @@ p
           height: 120px
      .st1
           fill: $orange
+     .stHueso3
+          fill: $whiteLight3
 .boxCurva
      width: 100%
      position: absolute
@@ -64,6 +110,8 @@ p
      left: 0
      height: auto
      overflow: hidden
+     @media screen and (min-width: 768px)
+          height: 60px
      @media screen and (min-width: 992px)
           height: 80px
      @media screen and (min-width: 1200px)
@@ -74,6 +122,12 @@ p
           fill: $orange
      .st2
           fill: white
+     .stHueso
+          fill: $whiteLight2
+     .stHueso2
+          fill: rgba($grayLight, 1)
+     .stHueso3
+          fill: $whiteLight3
 .boxImage
      img
          width: 100% 
@@ -110,9 +164,63 @@ p
      h3,
      h4
           @include fontSubTitle(white)
-
+.btn-mail,
+.btn-phone
+     @include fontDescription($gray)
+     text-decoration: none
+     span
+          &.bold
+               font-weight: 500
+     &.txtSmall
+          font-size: 14px
+          @media screen and (min-width: 992px)
+               font-size: 16px
+          @media screen and (min-width: 1200px)
+               font-size: 18px
+          @media screen and (min-width: 1400px)
+               font-size: 20px
+     &.txtMedium
+          font-size: 16px
+          @media screen and (min-width: 992px)
+               font-size: 18px
+          @media screen and (min-width: 1200px)
+               font-size: 20px
+          @media screen and (min-width: 1400px)
+               font-size: 22px
+     &:hover,
+     &:focus
+          color: $gray
+.btn-mail
+     color: $blue
+     &:hover,
+     &:focus
+          color: $blue
+.boxWhatsApp
+     position: fixed
+     z-index: 20
+     right: 1rem
+     bottom: 3rem
+     overflow: hidden
+     img
+          width: 60px
+     // transform: translateY(-50%)
+     
+.boxMessageForm
+     margin-top: 1.5rem
+     display: none
+     .messageForm
+          margin-left: .5rem
+          @include fontDescription($gray)
+          font-size: 14px
+          @media screen and (min-width: 992px)
+               font-size: 14px
+          @media screen and (min-width: 1200px)
+               font-size: 14px
+          @media screen and (min-width: 1400px)
+               font-size: 14px
 .boxDescription
-     p
+     p,
+     h4
           @include fontDescription($gray)
           span
                &.bold
@@ -125,6 +233,16 @@ p
                     font-size: 18px
                @media screen and (min-width: 1400px)
                     font-size: 20px
+          &.txtMedium
+               font-size: 16px
+               @media screen and (min-width: 992px)
+                    font-size: 18px
+               @media screen and (min-width: 1200px)
+                    font-size: 20px
+               @media screen and (min-width: 1400px)
+                    font-size: 22px
+     h4
+          font-weight: 500
 .btn-buttom
      @include styleButton()
      // box-shadow: 0px 25px 40px 0px rgba(37, 30, 47, 0.16)
@@ -132,3 +250,6 @@ p
      @include styleLink()
 .opacityCero
      opacity: 0 !important
+
+.txtWhite
+     color: white !important

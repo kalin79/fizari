@@ -2,11 +2,12 @@
      @include fontInput(white)
 .label-legal,
 .label-error
-     @include fontFree(white, 12px,12px,12px,12px, $fontDescription)
-     font-weight: 300px
+     @include fontFree(white, 18px,14px,12px,12px, $Poppins)
+     font-weight: 400
      a
-          color: $yellow
-          text-decoration: none
+          color: white
+          text-decoration: underline
+          font-weight: 500
           &:hover
                text-decoration: underline
 .boxSend,
@@ -16,6 +17,7 @@
           display: block
 label
      &.error
+          @include fontFree(white, 14px,12px,11px,12px, $Poppins)
           color: $red
 .label-error
      color: red
@@ -23,17 +25,34 @@ label
      display: none
      &.active
           display: block
+.boxFormRow
+     margin-bottom: 2rem
 .form-control
      border-radius: 20px
-     @include fontInput(black)
-     height: 56px
-     padding-left: 1.5rem
+     @include fontInput(white)
+     padding-left: 0rem
+     background: transparent
+     border: 0px solid white
+     border-radius: 0
+     border-bottom: 1px solid white
+     height: 33px
+     @media screen and (min-width: 992px)
+          height: 33px
+     @media screen and (min-width: 1200px)
+          height: 33px
+     @media screen and (min-width: 1400px)
+          height: 33px
+     
      &.error
-          border: 1px solid red
+          border: 1px solid red !important
      &:focus,
      &:hover
           outline: transparent
+          border-color: white
           box-shadow: none
+          background: transparent
+     &::placeholder
+          color: rgba(white,.5)
 .boxCheckbox
      input[type="checkbox"]
           padding: 0
@@ -50,7 +69,7 @@ label
                left: 8px
                width: 6px
                height: 14px
-               border: solid white
+               border: solid $orange
                border-width: 0 2px 2px 0
                transform: rotate(45deg) 
      label
@@ -60,9 +79,9 @@ label
           &:before
                content: ''
                -webkit-appearance: none
-               border: 1px solid black
+               border: 2px solid $orange
                border-radius: 5px
-               background-color: black
+               background-color: white
                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05)
                padding: 10px
                display: inline-block
@@ -70,3 +89,13 @@ label
                vertical-align: middle
                cursor: pointer
                margin-right: 5px
+form
+     .boxButtom
+          button
+               width: 240px
+               @media screen and (min-width: 992px)
+                    width: 240px
+               @media screen and (min-width: 1200px)
+                    width: 260px
+               @media screen and (min-width: 1400px)
+                    width: 280px
